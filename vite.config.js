@@ -13,7 +13,6 @@ export default defineConfig({
                 'resources/css/slider-slick.scss',
                 'resources/js/crocus-origin/script.js',
                 'resources/js/crocus-origin/gsap.js',
-                'resources/js/crocus-origin/slide-banner.js',
                 'resources/js/crocus-origin/validate.js',
                 'resources/js/crocus-origin/option.js',
             ],
