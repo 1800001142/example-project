@@ -14,3 +14,6 @@ Route::get('/slider-slick', function () {
 Route::get('/crocus-origin', function () {
     return view('crocus-origin');
 });
+Route::get('/button-stories', function () {
+    return view('button-stories');
+});
