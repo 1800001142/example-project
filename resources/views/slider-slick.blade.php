@@ -19,7 +19,6 @@
 @vite('resources/css/slider-slick.scss')
 <body>
 <div class="main">
-    <header class="header">
         <div class="nav-click">
             <div class="active-nav">
                 <div class="wrap-toggle"><span class="line-toggle toggle-1"></span><span
@@ -106,7 +105,7 @@ S29.1,33.4,23.6,33.4z"/>
             </div>
             <div class="overlay-click"></div>
         </div>
-    </header>
+
     <div class="slides--bg">
         <!-- slide 1 -->
         <div class="slide__bg" style="--bg: url(https://source.unsplash.com/Z8dtTatMVMw);" data-current></div>
