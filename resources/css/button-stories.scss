@@ -1,96 +1,11 @@
-body,
-html {
-    vertical-align: baseline
-}
-
-
-*,
-:after,
-:before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-:root {
-    --color-normal: #775aa7;
-    --color-normal-dark: #452874;
-    --color-normal-light: #947ac0;
-    --color-highlight: #f99f1b;
-    --color-highlight-dark: #c47604;
-    --color-white: #fff;
-    --color-red: #db595e;
-    --color-pink: #d39c8f;
-    --color-green: #779d56;
-    --color-green-light: #d7e9c7;
-    --color-green-dark: #576e51;
-    --color-blue: #41357a;
-    --color-blue-grey: #6a7c87;
-    --color-brown: #795548;
-    --color-black: #333;
-    --color-grey: #666;
-    --color-grey-light: #aaa;
-    --color-light: #bbb;
-    --color-white-grey: #efefef;
-    --color-bg: #f0e9e3;
-    --color-bg-grey: #999;
-    --color-bg-dark: #555;
-    --color-bg-black: #000;
-    --color-text-slide: #f7f0e9;
-    --color-text-pro: #f8f4f0;
-    --color-normal-zero: rgba(119, 90, 167, 0);
-    --color-normal-alpha-01: rgba(119, 90, 167, 0.1);
-    --color-normal-alpha-03: rgba(119, 90, 167, 0.3);
-    --color-normal-alpha-04: rgba(119, 90, 167, 0.4);
-    --color-normal-alpha-05: rgba(119, 90, 167, 0.5);
-    --color-normal-alpha-06: rgba(119, 90, 167, 0.6);
-    --color-normal-alpha-08: rgba(119, 90, 167, 0.8);
-    --color-normal-dark-alpha-08: rgba(69, 40, 116, 0.8);
-    --color-white-zero: rgba(255, 255, 255, 0);
-    --color-white-alpha-01: rgba(255, 255, 255, 0.1);
-    --color-white-alpha-02: rgba(255, 255, 255, 0.2);
-    --color-white-alpha-03: rgba(255, 255, 255, 0.3);
-    --color-white-alpha-04: rgba(255, 255, 255, 0.4);
-    --color-white-alpha-05: rgba(255, 255, 255, 0.5);
-    --color-white-alpha-06: rgba(255, 255, 255, 0.6);
-    --color-white-alpha-07: rgba(255, 255, 255, 0.7);
-    --color-white-alpha-08: rgba(255, 255, 255, 0.8);
-    --color-white-alpha-09: rgba(255, 255, 255, 0.9);
-    --color-black-zero: rgba(0, 0, 0, 0);
-    --color-black-alpha-01: rgba(0, 0, 0, 0.1);
-    --color-black-alpha-02: rgba(0, 0, 0, 0.2);
-    --color-black-alpha-03: rgba(0, 0, 0, 0.3);
-    --color-black-alpha-04: rgba(0, 0, 0, 0.4);
-    --color-black-alpha-05: rgba(0, 0, 0, 0.5);
-    --color-black-alpha-06: rgba(0, 0, 0, 0.6);
-    --color-black-alpha-07: rgba(0, 0, 0, 0.7);
-    --color-black-alpha-08: rgba(0, 0, 0, 0.8);
-    --color-black-alpha-09: rgba(0, 0, 0, 0.9);
-    --color-normal-gradient: linear-gradient(0deg, var(--color-normal-dark) 0%, var(--color-normal) 100%);
-    --color-text-fill: linear-gradient(90deg, rgb(69, 40, 116) 0%, rgb(218, 89, 94) 100%, rgb(69, 40, 116) 200%, var(--color-normal) 300%, rgb(248, 158, 27) 400%);
-    --color-text-gradient: linear-gradient(90deg, #452874 0%, rgb(248, 158, 27) 30%, #452874 60%, rgb(218, 89, 94) 90%, rgb(69, 40, 116) 120%);
-    --color-text-light-gradient: linear-gradient(90deg, var(--color-white) 0%, rgb(248, 158, 27) 30%, rgb(148, 122, 192) 40%, rgb(69, 40, 116) 80%);
-    --color-text-head: linear-gradient(90deg, var(--color-white) 0%, #f99f1b 60%, var(--color-white) 100%);
-    --color-gradient-black: linear-gradient(90deg, var(--color-black-alpha-02) 0%, var(--color-black-zero) 50%);
-    --color-gradient-white: linear-gradient(0deg, var(--color-white-alpha-05) 30%, var(--color-white-zero) 100%);
-    --color-white-radial: radial-gradient(circle, #fff 0%, rgba(255, 255, 255, 0.1) 60%);
-    --titleMax: 10vw;
-    --titlePresent: 8vw;
-    --titleHead: 5.5vw;
-    --titleBig: 4vw;
-    --titleFont: 3vw;
-    --titleMedium: 2.5vw;
-    --titleSmall: 2vw;
-    --titleMin: 1.5vw;
-    --wrapproduct: 22vw;
-    --font-specical: 'Ephesis', cursive;
-    --font-san-serif: 'Raleway', sans-serif;
-    --sat: env(safe-area-inset-top);
-    --sar: env(safe-area-inset-right);
-    --sab: env(safe-area-inset-bottom);
-    --sal: env(safe-area-inset-left)
-}
-
-
+$color-normal-dark : #452874;
+$color-black:#333;
+$font-san-serif:'Raleway',san-serif;
+$color-white:#fff;
+$color-white-alpha-05:rgba(255, 255, 255, 0.5);
+$color-black-alpha-01: rgba(0, 0, 0, 0.1);
+$color-green: #779d56;
+$color-normal-zero: rgba(119, 90, 167, 0);
 
 body,
 html {
@@ -104,25 +19,11 @@ html {
 body {
     padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-    background-color: var(--color-normal-dark);
-    color: var(--color-black);
-    font-family: var(--font-san-serif)
+    //=== Change background image here ===//
+    background: url(https://i.pinimg.com/564x/d5/2c/7b/d52c7b531c983b60edb5796b033690af.jpg);
+    color: $color-black;
+    font-family: $font-san-serif
 }
-
-html {
-    -webkit-user-select: none;
-    user-select: none;
-    touch-action: manipulation
-}
-
-body.color-bg {
-    background-color: var(--color-bg)
-}
-
-
-
-
-
 
 .all-stories {
     position: fixed;
@@ -133,20 +34,6 @@ body.color-bg {
     z-index: 50
 }
 
-.wrap-all-stories {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    transition: opacity .3s ease-in-out
-}
-
-.wrap-all-stories.hide {
-    opacity: 0;
-    pointer-events: none
-}
-
 .story-icon {
     position: relative;
     display: inline-block;
@@ -154,15 +41,13 @@ body.color-bg {
     border: 0;
     margin: 0 .5rem 0 0;
     background: 0 0;
-    cursor: pointer
-}
-
-.story-icon a,
-.story-icon button,
-.story-icon svg,
-section {
-    position: relative;
-    display: block
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    svg {
+        width: 45%;
+        height: 45%
+    }
 }
 
 .story-image {
@@ -172,19 +57,10 @@ section {
     justify-content: center;
     width: 4rem;
     height: 4rem;
-    color: var(--color-white);
-    border: 1px solid var(--color-white-alpha-05);
+    color: $color-white;
+    border: 1px solid $color-white-alpha-05;
     border-radius: 50%;
-    background-color: var(--color-black-alpha-01)
-}
-
-.story-icon svg {
-    width: 45%;
-    height: 45%
-}
-
-.story-icon:last-child {
-    margin: 0
+    background-color: $color-black-alpha-01;
 }
 
 .story-text {
@@ -197,8 +73,8 @@ section {
     font-size: .6rem;
     font-weight: 700;
     line-height: 1.2;
-    color: var(--color-white);
-    background: var(--color-normal-dark);
+    color: $color-white;
+    background: $color-normal-dark;
     border-radius: 1rem;
     text-transform: uppercase;
     transform: scale(0);
@@ -208,105 +84,98 @@ section {
     white-space: nowrap
 }
 
-.story-text::after {
-    content: '';
-    position: absolute;
-    right: 1.2rem;
-    bottom: -.4rem;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: .5rem .5rem 0;
-    border-color: var(--color-normal-dark) transparent transparent
+///===== Modify Height Button =====////
+.all-stories {
+    top: calc(var(--top-height) - 7rem)
 }
 
-.all-stories.show {
-    pointer-events: auto
-}
-
-.story-icon.current .story-image {
-    background-color: var(--color-green);
-    border-color: var(--color-normal-zero);
-    color: var(--color-white);
-    box-shadow: 0 1rem 1.5rem 0 var(--color-black-alpha-01)
-}
-
-.all-stories-second {
-    position: fixed;
-    width: auto;
-    height: auto;
-    right: 2rem;
-    top: calc(50% - 7rem);
-    z-index: 20
-}
-
-.all-stories-second .wrap-all-stories {
-    flex-direction: column
-}
-
-.all-stories-second .story-icon {
-    margin: 0 0 .5rem
-}
-
-.all-stories-second .story-text {
-    color: var(--color-normal-dark);
-    top: calc(50% - 1rem);
-    right: 4rem;
-    background: var(--color-white);
-    text-align: right
-}
-
-.all-stories-second .story-text::after {
-    right: -.4rem;
-    bottom: auto;
-    top: calc(50% - .5rem);
-    border-width: .5rem 0 .5rem .5rem;
-    border-color: transparent transparent transparent var(--color-white)
-}
-
-.all-stories-second .story-image,
-.all-stories-second.white .story-image {
-    color: var(--color-white);
-    border-color: var(--color-white-alpha-05)
-}
-
-.all-stories-second.left-pos {
-    right: auto;
-    left: 2rem
-}
-
-.all-stories-second.left-pos .story-text {
-    right: auto;
-    left: 4rem
-}
-
-.all-stories-second.left-pos .story-text::after {
-    right: auto;
-    left: -.4rem;
-    border-width: .5rem .5rem .5rem 0;
-    border-color: transparent var(--color-white) transparent transparent
-}
-
-
-
-
+//
 
 
 .all-stories {
-    top: calc(var(--top-height) - 9rem)
+      .story-icon {
+        animation-name: fadeInDown;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        pointer-events: auto;
+      }
+    
+  }
+  
+
+  .story-icon:hover {
+    .story-image {
+      svg {
+        transform: scale(1.3);
+        stroke: currentColor;
+        fill-opacity: 0;
+        stroke-width: 5;
+        stroke-dasharray: 600;
+        stroke-dashoffset: 600;
+        animation: 0.8s DrawStroke forwards;
+      }
+    }
+  }
+  
+@media (hover: hover) and (pointer: fine) {
+
+    .story-image,
+    .story-image svg,
+    .story-text {
+        transition: all .3s ease-in-out
+    }
+
+    .story-icon:hover {
+        .story-image {
+            background-color: $color-green;
+            border-color: $color-normal-zero;
+            color: $color-white;
+            box-shadow: 0 .5rem 1rem 0 $color-black-alpha-01
+        }
+
+        .story-text {
+            opacity: 1;
+            transform: none
+        }
+    }
 }
 
-.sx .all-stories {
-    top: calc(var(--top-height) - 10vh)
+
+
+@keyframes DrawStroke {
+    0% {
+        stroke-dashoffset: 600;
+        stroke-dasharray: 600;
+        stroke-width: 5;
+        fill-opacity: 0
+    }
+
+    95% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+        fill-opacity: 0;
+        stroke-width: 5
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+        fill-opacity: 1;
+        stroke-width: 1
+    }
 }
 
-.full-h .all-stories,
-.short .all-stories {
-    top: calc(var(--top-height) - 6rem)
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -10rem, 0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: none
+    }
 }
-
-
-
 
 @media screen and (max-width: 1800px) {
 
@@ -334,5 +203,4 @@ section {
 
 .banner-home {
     height: 100vh;
-    background: var(--color-normal)
 }
