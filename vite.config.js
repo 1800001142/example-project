@@ -17,6 +17,9 @@ export default defineConfig({
                 'resources/js/crocus-origin/gsap.js',
                 'resources/js/crocus-origin/validate.js',
                 'resources/js/crocus-origin/option.js',
+                'resources/js/button.js',
+                'resources/js/common.js',
+                'resources/css/product-card.scss',
 
             ],
             refresh: true,

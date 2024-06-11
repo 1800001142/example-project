@@ -17,3 +17,9 @@ Route::get('/crocus-origin', function () {
 Route::get('/button-stories', function () {
     return view('button-stories');
 });
+Route::get('/product', function () {
+    return view('product');
+});
+
+
+
