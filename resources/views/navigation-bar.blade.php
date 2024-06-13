@@ -115,25 +115,7 @@
         </div>
     </div>
 </header>
-
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script>
-    var Protocal = window.location.protocol, Host = window.location.host,
-        pathArray = window.location.pathname.split("/"),
-        getDirect = Protocal + "//" + Host + "/";
-    gsap.config({
-        nullTargetWarn: !1
-    });
- var  overlayMenu = document.querySelector(".overlay-menu");
-     if (overlayMenu) {
-        (Div = document.createElement("div")).className = "right-bg-menu", overlayMenu.appendChild(Div);
-        var BGIMG = [getDirect + "Content/theme_btq/images/menu/1.jpg", getDirect + "Content/theme_btq/images/menu/2.jpg", getDirect + "Content/theme_btq/images/menu/3.jpg", getDirect + "Content/theme_btq/images/menu/4.jpg", getDirect + "Content/theme_btq/images/menu/5.jpg"];
-        function makeGoto() {
-        }
-        makeGoto()
-    }
-</script>
 @vite('resources/js/navigation-bar.js')
-<div class="httpserver display-none">https://www.crocusorigin.vn</div>
 </body>
 </html>
