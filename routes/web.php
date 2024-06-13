@@ -20,6 +20,10 @@ Route::get('/button-stories', function () {
 Route::get('/product', function () {
     return view('product');
 });
+Route::get('/navigation-bar', function () {
+    return view('navigation-bar');
+});
+
 
 
 

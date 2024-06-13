@@ -17,10 +17,10 @@ export default defineConfig({
                 'resources/js/crocus-origin/gsap.js',
                 'resources/js/crocus-origin/validate.js',
                 'resources/js/crocus-origin/option.js',
-                'resources/js/button.js',
                 'resources/js/common.js',
                 'resources/css/product-card.scss',
-
+                'resources/js/navigation-bar.js',
+                'resources/css/navigation-bar.scss',
             ],
             refresh: true,
         }),
