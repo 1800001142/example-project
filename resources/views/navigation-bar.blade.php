@@ -14,20 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
     @vite('resources/css/navigation-bar.scss')
 </noscript>
-<script>
-    var loadDeferredStyles = function () {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.getElementById("render-styles");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = requestAnimationFrame;
-    if (raf) raf(function () {
-        window.setTimeout(loadDeferredStyles, 0);
-    });
-    else window.addEventListener('load', loadDeferredStyles);
-</script>
+@vite('resources/js/navigation-bar.js')
 <header>
     <div class="nav-click">
         <div class="active-nav">
@@ -116,6 +103,6 @@
     </div>
 </header>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-@vite('resources/js/navigation-bar.js')
+
 </body>
 </html>
