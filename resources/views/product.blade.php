@@ -4,13 +4,24 @@
     <title>Product Card</title>
     <link rel="shortcut icon" href="https://www.crocusorigin.vn/Content/theme_btq/images/favicon.ico"
         type="image/x-icon">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     @vite('resources/css/product-card.scss')
 </head>
 
 <body>
-    <div class="wrap-large">
+
+<div class="parent-container">
+    <div class="product-info  animate__animated animate__slideInDown animate__delay-0.6s">
+
+        <h1>Sâm hoạt huyết dưỡng não</h1>
+        <p>Được hội đồng khoa học nghiệm thu,...</p>
+    </div>
+</div>    <div class="wrap-large">
         <div class=" product-inner" style="margin-right: 2rem; width: 25vw;">
-            <div class="product-wrap">
+            <div class="product-wrap animate__animated animate__slideInUp animate__delay-0.6s">
                 <div class="product-pic">
                     <div class="transform-x" style="transform: translate3d(10px, 0px, 0px);"><img class="lazy"
                             src="https://www.crocusorigin.vn/uploads/files/products/tea/fresh-dried-chrysanthemum-flowers-wood-background-(1).jpg"

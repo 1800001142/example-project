@@ -273,6 +273,12 @@ body {
     }
 
 }
+.wrap-large {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+}
+
 .product-wrap {
     position: relative;
     width: 100%;
@@ -281,6 +287,7 @@ body {
     overflow: hidden;
     border-radius: 1rem;
 }
+
 .product-pic {
     &::before {
         position: absolute;
@@ -399,7 +406,7 @@ strong {
     position: relative;
     display: inline-block;
     margin: 0 1rem 0 0;
-    font-weight: .8rem;
+
     font-weight: 700;
     padding: .3rem 0;
     border-top: 1px solid currentColor;
@@ -600,4 +607,25 @@ html[lang=vi] .code::before {
     to {
         stroke-dashoffset: 0
     }
+}
+.parent-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    height: 10vh; /* Full viewport height for demonstration */
+}
+
+.product-info {
+    width: 50%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.product-info h1 {
+    align-self: flex-start; /* Aligns the <h1> to the start (top) */
+    width: 100%; /* Ensure it takes full width */
+    color: mediumblue;
 }
