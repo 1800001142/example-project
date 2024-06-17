@@ -10,7 +10,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <style>
-
         .main {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
@@ -19,13 +18,14 @@
             align-items: center;
             height: 100vh;
             margin-top: -90px;
-        }
-
-        div {
             background-color: #fff;
             text-align: center;
             padding: 20px;
             border-radius: 8px;
+        }
+
+        div {
+
         }
 
         input[type="text"],
@@ -65,6 +65,7 @@
             margin-bottom: 10px;
             border-radius: 4px;
             background-color: #fff;
+            text-align:center;
         }
 
         .container {
