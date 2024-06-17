@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AjaxController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -23,7 +24,8 @@ Route::get('/product', function () {
 Route::get('/navigation-bar', function () {
     return view('navigation-bar');
 });
+Route::get('/my-form', function () {
+    return view('demoAjax');
+});
 
-
-
-
+Route::post('/getvalue', [AjaxController::class, 'getValue'])->name('getvalue');
