@@ -1,0 +1,164 @@
+$font-san-serif: 'Raleway', sans-serif;
+body{
+    background:url(https://s3-alpha-sig.figma.com/img/01f0/7a78/785acaccd08d3d789a6c3304fd386980?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fWmp8gzUQczY8TfRj2-IAgSm5FRnPMh4zAm5WtETCVX28QRjgHxGV~AfMcDRiJCV5pleqd-XWt~ykqBvHj2hJnhBN1l8~Wk-qAl~j8IRx9y3xRa55ZAhxmzTiq7cZE8kcN2EX3PbODgzzrhZWCtJTnQEQyRE2syW-g7clf13oroKMbQ0iOGjWkBxDlEXgQCmZyItdr8Ujsz2E6YpG-3nFg07mH3ipBndBWUXNBFf7ZsGJm4a35-kdHtk1ChMqbiKnJ2P-Mb0FhaVpzoE8hzycAnlEJHHzyc~LpBzq-6rRrtEwCboO3MqNPK63P90RwJxXYWIef44p43J7EpQzUFyVA__);
+    display:flex;
+    font-family:$font-san-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.vertical-menu {
+    margin-top: 140px;
+    margin-left: 70px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.7);
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+    border-radius: 16px;
+}
+
+.menu-item {
+    width: 180px;
+    margin-left: 10px;
+    height: 50px;
+
+    a {
+        font-weight: 600;
+        display: block;
+        color: black;
+        padding: 12px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            border-left: 1px solid #0C568C;
+            background-color: white;
+            color: #0C568C;
+        }
+
+        &.active {
+            border-left: 1px solid #0C568C;
+            background-color: white;
+            color: #0C568C;
+        }
+    }
+}
+
+.contain{
+    background: rgba(255, 255, 255, 0.7);
+    height: 500px;
+    border-radius: 10px;
+    width: 950px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.content {
+    margin-top: 40px;
+    margin-left: 25px;
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    width: 95%;
+
+}
+.product-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding: 16px;
+    justify-content: space-between; /* Căn các cột ra giữa */
+}
+
+.product-column {
+    flex: 1; /* Chia đều không gian cho các cột */
+    text-align: center; /* Căn giữa nội dung trong các cột */
+}
+.column-1 {
+    margin-left: 180px; /* Di chuyển cột %CK về phía sau */
+}
+
+.column-2 {
+    margin-left: 25px; /* Tạo khoảng cách giữa cột 2 và cột 3 */
+}
+
+.product-item:first-of-type {
+    border-bottom: none; /* Loại bỏ đường viền dưới cột đầu tiên */
+}
+
+.product-image {
+    height: 80px;
+    margin: 0 auto;
+    border: 2px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 16px;
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.product-info strong,
+.product-info h3 {
+    margin: 4px 0;
+}
+.text-center{
+    text-align: center;
+}
+.big-font{
+    font-size: 18px;
+}
+.small-font{
+    font-size: 11px;
+}
+.display-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    margin-top:-10px;
+
+}
+.display-flex p{
+    padding: 7px 0;
+    font-size: smaller;
+}
+.underline{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;/* Tạo border-bottom nối liền */
+}
+.info-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    /* Căn giữa theo chiều dọc */
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;/* Tạo border-bottom nối liền */
+}
+
+.info-wrapper p {
+    margin: 0; /* Loại bỏ margin mặc định của các thẻ p */
+    padding: 7px 0;
+}
+.font-bold{
+    font-weight: bold;
+}

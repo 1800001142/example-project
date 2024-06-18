@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\AjaxController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Auth\RegisterController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -29,3 +30,8 @@ Route::get('/my-form', function () {
 });
 
 Route::post('/getvalue', [AjaxController::class, 'getValue'])->name('getvalue');
+Route::get('/productDetail', function () {
+    return view('productDetail');
+});
+
+
