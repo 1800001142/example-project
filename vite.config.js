@@ -8,6 +8,8 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/css/orderDetail.scss',
+                'resources/css/register.scss',
+                'resources/js/register.js',
             ],
             refresh: true,
         }),

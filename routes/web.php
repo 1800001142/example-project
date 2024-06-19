@@ -32,6 +32,8 @@ Route::get('/my-form', function () {
 Route::post('/getvalue', [AjaxController::class, 'getValue'])->name('getvalue');
 Route::get('/productDetail', function () {
     return view('productDetail');
+})->name('productDetail');
+Route::get('/registerr', function () {
+    return view('register');
 });
-
 
