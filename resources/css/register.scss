@@ -3,7 +3,7 @@ body{
     background: url("https://s3-alpha-sig.figma.com/img/01f0/7a78/785acaccd08d3d789a6c3304fd386980?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fWmp8gzUQczY8TfRj2-IAgSm5FRnPMh4zAm5WtETCVX28QRjgHxGV~AfMcDRiJCV5pleqd-XWt~ykqBvHj2hJnhBN1l8~Wk-qAl~j8IRx9y3xRa55ZAhxmzTiq7cZE8kcN2EX3PbODgzzrhZWCtJTnQEQyRE2syW-g7clf13oroKMbQ0iOGjWkBxDlEXgQCmZyItdr8Ujsz2E6YpG-3nFg07mH3ipBndBWUXNBFf7ZsGJm4a35-kdHtk1ChMqbiKnJ2P-Mb0FhaVpzoE8hzycAnlEJHHzyc~LpBzq-6rRrtEwCboO3MqNPK63P90RwJxXYWIef44p43J7EpQzUFyVA__");
      display:flex;
     font-family: 'Raleway', sans-serif;
-
+    background-attachment: fixed;
 }
 
 * {
@@ -54,12 +54,13 @@ body{
 
 .contain{
     width: 600px;
-    height: 730px;
+    height: auto;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     margin-left: 150px;
     margin-top: 50px;
-
+    display: block;
+    padding-bottom: 30px;
 }
 
 .content {
@@ -75,40 +76,41 @@ body{
     align-items: flex-start;
     gap: 18px;
     width: 95%;
+}
+.input-container {
+    input {
+        width: 500px;
+        padding: 10px 17px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        outline: none;
+        font-size: 18px;
 
+        &:focus {
+            border-bottom: 1px solid darkblue;
+        }
+
+        &::placeholder {
+            font-size: 15px;
+        }
+    }
 }
 
-.font-bold{
-    font-weight: bold;
-}
-.input-container input{
-    width: 500px;
-    padding: 10px 17px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    outline:none;
-    font-size: 18px;
-}
-.input-container input:focus{
-    border-bottom: 1px solid darkblue;
-}
-.input-container input::placeholder{
-    font-size:15px;
-
-}
 
 .password-container {
     position: relative;
     display: flex;
     align-items: center;
-
+    .error{
+        margin-bottom: 0;
+    }
 }
 .password-input {
     padding-right: 40px; /* Space for the eye icon */
     width: 100%; /* Adjust width as needed */
 }
-.toggle-password {
+.toggle-password, .toggle-password1 {
     margin-right: 220px;
     margin-top: 5px;
     position: absolute;
@@ -116,29 +118,37 @@ body{
     cursor: pointer;
     width: 36px;
     height: 36px;
+    svg{
+        color: gray;
+    }
 }
-.toggle-password svg{
-    color: gray;
-}
-
 .checkbox-container{
+    display: flex;
     width: 721px;
     height: 64px;
     padding: 10px 10px 10px 17px;
-    display: flex;
+    .error{
+        margin-top: 10px;
+        margin-bottom: 0;
+        margin-left: -17px;
+    }
+    span{
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 25px;
+        font-weight: 600;
+        a{
+            text-decoration: none;
+            color: #0C568C;
+        }
+    }
 }
-.checkbox-container span{
-    margin-top: 12px;
-    margin-left: 10px;
-    font-weight: 600;
-}
-.checkbox-container span a{
-    text-decoration: none;
-    color: #0C568C;
-}
+
 #terms-checkbox{
     height: 20px;
     width: 20px;
+    width: 80px;
+    margin-left: -35px;
 }
 .btn-register{
     height: 45px;
@@ -149,12 +159,14 @@ body{
     border-radius: 12px;
     border: none;
     font-weight: 600;
+    &:hover{
+        color: #0C568C;
+    }
+
 }
-.btn-register:hover{
-    color: #0C568C;
-}
+
 .btn-login{
-    margin-top: 10px;
+    margin-top: -10px;
     height: 45px;
     width: 505px;
     background-color: white;
@@ -163,8 +175,34 @@ body{
     border-radius: 12px;
     border: 0.5px solid gray;
     font-weight: 600;
+    &:hover{
+        color: #0C568C;
+        border: 1px solid black;
+    }
 }
-.btn-login:hover{
-    color: #0C568C;
-    border: 1px solid black;
+
+.error{
+    width:510px;
+    color: red;
+    display: block; /* Thêm display:block để đảm bảo lỗi nằm trên một dòng riêng */
+    margin-top: 5px;
+    margin-bottom: -25px;
+    font-weight: 300;
 }
+.password-container
+.checkbox-container
+#terms-checkbox{
+
+}
+.button-container {
+    margin-top: 20px; /* Khoảng cách giữa checkbox-container và nút đăng ký */
+}
+.message-error{
+    color: red;
+
+    display: block;
+    width: 500px;
+    margin-top: 5px;
+
+}
+

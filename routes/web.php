@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AjaxController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DatabaseTestController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Auth\RegisterController;
@@ -21,7 +23,7 @@ Route::get('/button-stories', function () {
 });
 Route::get('/product', function () {
     return view('product');
-});
+})->name('product');
 Route::get('/navigation-bar', function () {
     return view('navigation-bar');
 });
@@ -33,7 +35,12 @@ Route::post('/getvalue', [AjaxController::class, 'getValue'])->name('getvalue');
 Route::get('/productDetail', function () {
     return view('productDetail');
 })->name('productDetail');
-Route::get('/registerr', function () {
+
+Route::get('/register', function () {
     return view('register');
-});
+})->name('register');
+
+Route::post('/register', [AuthController::class, 'registerr'])->name('registerr');
+
+Route::get('/test-db-connection', [DatabaseTestController::class, 'testConnection']);
 
