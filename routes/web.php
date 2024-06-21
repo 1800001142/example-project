@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AjaxController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Auth\RegisterController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -14,3 +16,24 @@ Route::get('/slider-slick', function () {
 Route::get('/crocus-origin', function () {
     return view('crocus-origin');
 });
+Route::get('/button-stories', function () {
+    return view('button-stories');
+});
+Route::get('/product', function () {
+    return view('product');
+});
+Route::get('/navigation-bar', function () {
+    return view('navigation-bar');
+});
+Route::get('/my-form', function () {
+    return view('demoAjax');
+});
+
+Route::post('/getvalue', [AjaxController::class, 'getValue'])->name('getvalue');
+Route::get('/productDetail', function () {
+    return view('productDetail');
+})->name('productDetail');
+Route::get('/registerr', function () {
+    return view('register');
+});
+

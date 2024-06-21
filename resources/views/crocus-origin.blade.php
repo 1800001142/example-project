@@ -15292,6 +15292,57 @@ S29.1,33.4,23.6,33.4z"/>
             </div>
         </div>
     </section>
+    <section class="product-home sec-02">
+        <div class="bg-section"></div>
+        <div class="scroll-text top-section font-special"><span>Crocus Origin Crocus Origin Crocus Origin</span></div>
+        <div class="wrap-large">
+            <div class="content-style">
+                <div class="box-text"><small class="ani-item">Nh&#243;m sản phẩm</small>
+                    <div class="title-main color-normal"><h2 class="text-ani-item">Trà, Saffron</h2></div>
+                    <div class="box-txt ani-item">
+                        <p>Trà một trong những thức uống được tiêu thụ rộng rãi nhất trên thế giới. Loại thức uống này,
+                            không chỉ mang lại cho chúng ta sự sảng khoái, hưng phấn mà còn cho chúng ta rất nhiều lợi
+                            ích sức khoẻ. </p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="trans product-item" data-speed="-1">
+                        <div class="product-wrap ani-item">
+                            <div class="product-pic">
+                                <div class="pic-cover"><img class="lazy"
+                                                            src="https://www.crocusorigin.vn/uploads/files/products/01.jpg"
+                                                            alt="Tr&#224; thảo mộc" loading="lazy"></div>
+                            </div>
+                            <div class="product-txt  color-white"><small class="ani-item">C&#225;c sản phẩm</small>
+                                <div class="product-title"><h3>Tr&#224; thảo mộc</h3></div>
+                                <div class="wrap-view-more ani-item"><a
+                                        href="https://www.crocusorigin.vn/san-pham/tra-thao-moc-2.html"
+                                        class="go-detail view-more"><span>Xem th&#234;m</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trans product-item" data-speed="1">
+                        <div class="product-wrap ani-item">
+                            <div class="product-pic">
+                                <div class="pic-cover"><img class="lazy"
+                                                            src="https://www.crocusorigin.vn/uploads/files/products/bg-01_1.jpg"
+                                                            alt="Saffron" loading="lazy"></div>
+                            </div>
+                            <div class="product-txt  color-white"><small class="ani-item">C&#225;c sản phẩm</small>
+                                <div class="product-title"><h3>Saffron</h3></div>
+                                <div class="wrap-view-more ani-item"><a
+                                        href="https://www.crocusorigin.vn/san-pham/nhuy-hoa-nghe-tay.html"
+                                        class="go-detail view-more"><span>Xem th&#234;m</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{--    --------------------------------------------------}}
     {{--    <section class="work-space sec-08">--}}
     {{--        <div class="bg-section"></div>--}}
     {{--        <div class="bg-flower-violet"><span class="flower-01 trans transform-img scale-stran"--}}
@@ -17881,106 +17932,106 @@ C13.7,4.5,4.5,13.7,4.5,25S13.7,45.5,25,45.5S45.5,36.3,45.5,25S36.3,4.5,25,4.5z"/
     })), closeLoginSupplier.addEventListener("click", (function (e) {
         e.preventDefault(), loginButSupplier.classList.remove("active"), loginBoxSupplier.classList.remove("active"), overlayClick.classList.remove("active")
     })));
-    var shoppingCart = function () {
-        var e = [];
-
-        function t(e, t, r, o, i, a, n, l, s, c, u, d, p, m, v, g, h, f, y) {
-            this.image = e, this.main = t, this.group = r, this.name = o, this.weight = i, this.code = a, this.price = n, this.priceOld = l, this.vat = s, this.url = c, this.urldetail = u, this.count = p, this.smelltitle = m, this.smell = d, this.couponId = v, this.couponPrice = g, this.quantity = h, this.pricelevel = f, this.supplierid = y
-        }
-
-        function r() {
-            localStorage.setItem("shoppingCart", JSON.stringify(e))
-        }
-
-        null != localStorage.getItem("shoppingCart") && (e = JSON.parse(localStorage.getItem("shoppingCart")));
-        var o = {};
-
-        function a(e, t) {
-            return Number(e) + Number(e) / 100 * Number(t)
-        }
-
-        return o.addToCart = function (o, i, a, n, l, s, c, u, d, p, m, v, g, h, f, y, L, C, S) {
-            for (var q in e) if ("" === v || void 0 === v) {
-                if (e[q].name === n) return e[q].couponPrice == y ? (e[q].count += g, void r()) : (e[q].price = c, e[q].priceOld = u, e[q].couponPrice = y, void r())
-            } else if (e[q].name === n && e[q].smell === v) return e[q].couponPrice == y ? (e[q].count += g, void r()) : (e[q].price = c, e[q].priceOld = u, e[q].couponPrice = y, void r());
-            q = new t(o, i, a, n, l, s, c, u, d, p, m, v, g, h, f, y, L, C, S);
-            e.push(q), r()
-        }
-            , o.setCountForItem = function (t, o, i) {
-            for (var a in e) if ("" === o || void 0 === o) {
-                if (e[a].name === t) {
-                    e[a].count = i, r();
-                    break
-                }
-            } else if (e[a].name === t && e[a].smell === o) {
-                e[a].count = i, r();
-                break
-            }
-        }
-            , o.addItemFromCart = function (t, o) {
-            for (var i in e) if ("" === o || void 0 === o) {
-                if (e[i].name === t) {
-                    e[i].count++, r();
-                    break
-                }
-            } else if (e[i].name === t && e[i].smell === o) {
-                e[i].count++, r();
-                break
-            }
-        }
-            , o.removeItemFromCart = function (t, o) {
-            for (var i in e) if ("" === o || void 0 === o) {
-                if (e[i].name === t) {
-                    e[i].count--, 0 === e[i].count && e.splice(i, 1), r();
-                    break
-                }
-            } else if (e[i].name === t && e[i].smell === o) {
-                e[i].count--, 0 === e[i].count && e.splice(i, 1);
-                var a = e[i].pricelevel;
-                e[i].price * (e[i].count - 1) < a && (e[i].couponPrice = 0), r();
-                break
-            }
-        }
-            , o.delItemFromCart = function (t, o) {
-            for (var i in e) if ("" === o || void 0 === o) {
-                if (e[i].name === t) {
-                    e.splice(i, 1), r();
-                    break
-                }
-            } else if (e[i].name === t && e[i].smell === o) {
-                e.splice(i, 1), r();
-                break
-            }
-        }
-            , o.clearCart = function () {
-            e = [], r()
-        }
-            , o.totalCount = function () {
-            var t = 0;
-            for (var r in e) t += parseInt(e[r].count);
-            return t
-        }
-            , o.listCart = function () {
-            var t = [];
-            for (i in e) {
-                item = e[i];
-                var r = {};
-                for (p in item) r[p] = item[p];
-                var o = a(item.price, item.vat), n = item.couponPrice;
-                r.total = null == n ? Number(o * item.count).formatMoney(0, ",", ",") : Number(o * item.count - item.couponPrice).formatMoney(0, ",", ","), t.push(r)
-            }
-            return t
-        }
-            , o.totalCart = function () {
-            var t = 0;
-            for (var r in e) {
-                var o = a(e[r].price, e[r].vat), i = e[r].couponPrice;
-                t += null == i ? o * e[r].count : o * e[r].count - i
-            }
-            return t = t.formatMoney(0, ",", ",")
-        }
-            , o
-    }();
+    // var shoppingCart = function () {
+    //     var e = [];
+    //
+    //     function t(e, t, r, o, i, a, n, l, s, c, u, d, p, m, v, g, h, f, y) {
+    //         this.image = e, this.main = t, this.group = r, this.name = o, this.weight = i, this.code = a, this.price = n, this.priceOld = l, this.vat = s, this.url = c, this.urldetail = u, this.count = p, this.smelltitle = m, this.smell = d, this.couponId = v, this.couponPrice = g, this.quantity = h, this.pricelevel = f, this.supplierid = y
+    //     }
+    //
+    //     function r() {
+    //         localStorage.setItem("shoppingCart", JSON.stringify(e))
+    //     }
+    //
+    //     null != localStorage.getItem("shoppingCart") && (e = JSON.parse(localStorage.getItem("shoppingCart")));
+    //     var o = {};
+    //
+    //     function a(e, t) {
+    //         return Number(e) + Number(e) / 100 * Number(t)
+    //     }
+    //
+    //     return o.addToCart = function (o, i, a, n, l, s, c, u, d, p, m, v, g, h, f, y, L, C, S) {
+    //         for (var q in e) if ("" === v || void 0 === v) {
+    //             if (e[q].name === n) return e[q].couponPrice == y ? (e[q].count += g, void r()) : (e[q].price = c, e[q].priceOld = u, e[q].couponPrice = y, void r())
+    //         } else if (e[q].name === n && e[q].smell === v) return e[q].couponPrice == y ? (e[q].count += g, void r()) : (e[q].price = c, e[q].priceOld = u, e[q].couponPrice = y, void r());
+    //         q = new t(o, i, a, n, l, s, c, u, d, p, m, v, g, h, f, y, L, C, S);
+    //         e.push(q), r()
+    //     }
+    //         , o.setCountForItem = function (t, o, i) {
+    //         for (var a in e) if ("" === o || void 0 === o) {
+    //             if (e[a].name === t) {
+    //                 e[a].count = i, r();
+    //                 break
+    //             }
+    //         } else if (e[a].name === t && e[a].smell === o) {
+    //             e[a].count = i, r();
+    //             break
+    //         }
+    //     }
+    //         , o.addItemFromCart = function (t, o) {
+    //         for (var i in e) if ("" === o || void 0 === o) {
+    //             if (e[i].name === t) {
+    //                 e[i].count++, r();
+    //                 break
+    //             }
+    //         } else if (e[i].name === t && e[i].smell === o) {
+    //             e[i].count++, r();
+    //             break
+    //         }
+    //     }
+    //         , o.removeItemFromCart = function (t, o) {
+    //         for (var i in e) if ("" === o || void 0 === o) {
+    //             if (e[i].name === t) {
+    //                 e[i].count--, 0 === e[i].count && e.splice(i, 1), r();
+    //                 break
+    //             }
+    //         } else if (e[i].name === t && e[i].smell === o) {
+    //             e[i].count--, 0 === e[i].count && e.splice(i, 1);
+    //             var a = e[i].pricelevel;
+    //             e[i].price * (e[i].count - 1) < a && (e[i].couponPrice = 0), r();
+    //             break
+    //         }
+    //     }
+    //         , o.delItemFromCart = function (t, o) {
+    //         for (var i in e) if ("" === o || void 0 === o) {
+    //             if (e[i].name === t) {
+    //                 e.splice(i, 1), r();
+    //                 break
+    //             }
+    //         } else if (e[i].name === t && e[i].smell === o) {
+    //             e.splice(i, 1), r();
+    //             break
+    //         }
+    //     }
+    //         , o.clearCart = function () {
+    //         e = [], r()
+    //     }
+    //         , o.totalCount = function () {
+    //         var t = 0;
+    //         for (var r in e) t += parseInt(e[r].count);
+    //         return t
+    //     }
+    //         , o.listCart = function () {
+    //         var t = [];
+    //         for (i in e) {
+    //             item = e[i];
+    //             var r = {};
+    //             for (p in item) r[p] = item[p];
+    //             var o = a(item.price, item.vat), n = item.couponPrice;
+    //             r.total = null == n ? Number(o * item.count).formatMoney(0, ",", ",") : Number(o * item.count - item.couponPrice).formatMoney(0, ",", ","), t.push(r)
+    //         }
+    //         return t
+    //     }
+    //         , o.totalCart = function () {
+    //         var t = 0;
+    //         for (var r in e) {
+    //             var o = a(e[r].price, e[r].vat), i = e[r].couponPrice;
+    //             t += null == i ? o * e[r].count : o * e[r].count - i
+    //         }
+    //         return t = t.formatMoney(0, ",", ",")
+    //     }
+    //         , o
+    // }();
 
     function displayCart() {
         var e = shoppingCart.listCart(), t = "";
@@ -18088,7 +18139,6 @@ C13.7,4.5,4.5,13.7,4.5,25S13.7,45.5,25,45.5S45.5,36.3,45.5,25S36.3,4.5,25,4.5z"/
         }))
     }));
 </script>
-@vite('resources/js/crocus-origin/gsap.js')
 @vite('resources/js/crocus-origin/script.js')
 <div class="httpserver display-none">https://www.crocusorigin.vn</div>
 </body>
