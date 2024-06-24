@@ -14,23 +14,12 @@
 </head>
 <body>
 
-<div class="vertical-menu">
-    <div class="menu-item"><a href="#">Thông tin cá nhân</a></div>
-    <div class="menu-item"><a href="#">Link tiếp thị liên kết</a></div>
-    <div class="menu-item"><a href="{{ route('productDetail') }}" >Đơn hàng</a></div>
-    <div class="menu-item"><a href="#" class="active">Đăng ký</a></div>
-    <div class="menu-item"><a href="#">Sản phẩm yêu thích</a></div>
-    <div class="menu-item"><a href="#">Hệ thống của tôi</a></div>
-    <div class="menu-item"><a href="#">Thu nhập của tôi</a></div>
-    <div class="menu-item"><a href="#">Đổi mật khẩu</a></div>
-    <div class="menu-item"><a href="#">Đăng xuất</a></div>
-</div>
 
 <div class="contain  animate__animated animate__slideInDown animate__delay-0.6s">
 
     <h3 style="font-size: 74px; margin-top: 15px; text-align: center">Đăng ký</h3>
     <div class="content">
-        <form method="POST" action="{{ route('registerr') }}" id="register-form">
+        <form method="POST" action="{{ route('register') }}" id="register-form">
             @csrf
             <div class="input-container">
                 <input type="text" placeholder="Họ và Tên (*)" name="name" value="{{ old('name') }}"><br>

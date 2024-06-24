@@ -39,14 +39,11 @@ $('#register-form').validate({
 });
 document.addEventListener('DOMContentLoaded', function() {
     var links = document.querySelectorAll('.vertical-menu a');
-
     links.forEach(function(link) {
         link.addEventListener('click', function(e) {
             links.forEach(function(item) {
                 item.classList.remove('active');
             });
-
-
             this.classList.add('active');
         });
     });

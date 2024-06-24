@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
-     public function registerr(RegisterRequest $request)
+     public function register(RegisterRequest $request)
 
     {
         $email = $request->email ? $request->email : null;
