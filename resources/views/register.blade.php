@@ -26,7 +26,15 @@
 
                 <input type="tel" placeholder="Số điện thoai (*)" name="phone" value="{{ old('phone') }}" pattern="[0-9\s\-\+]*" oninput="this.value = this.value.replace(/[^0-9\s\-\+]/g, '');"><br>
 
+                @error('phone')
+                <p class ="message-error">Vui lòng nhập đúng số điện thoại</p>
+                @enderror
+
                 <input type="tel" placeholder="Số điện thoại người giới thiệu (*)" name="phoneRela" value="{{ old('phoneRela') }}" pattern="[0-9\s\-\+]*" oninput="this.value = this.value.replace(/[^0-9\s\-\+]/g, '');"><br>
+
+                @error('phoneRela')
+                <p class ="message-error">Vui lòng nhập đúng số điện thoại</p>
+                @enderror
 
                 <input type="email" placeholder="Email" name="email" value="{{ old('email') }}"><br>
 

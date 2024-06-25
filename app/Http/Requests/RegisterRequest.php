@@ -15,9 +15,23 @@ class RegisterRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:255',
-            'phone' => 'required|string|max:15',
-            'phoneRela' => 'required|string|max:15',
-
+            'phone' => [
+                'required',
+                'string',
+                'max:12',
+                'regex:/^(03|05|07|08|09)[0-9]{8}$/'
+            ],
+            'phoneRela' => [
+                'required',
+                'string',
+                'max:12',
+                'regex:/^(03|05|07|08|09)[0-9]{8}$/'
+            ],
+            'email' => [
+                'string',
+                'email',
+                'max:255',
+            ],
             'password' => [
                 'required',
                 'min:6',

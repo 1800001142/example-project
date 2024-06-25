@@ -1,3 +1,7 @@
+$.validator.addMethod("phoneVN", function(value, element) {
+    return this.optional(element) || /^(03|05|07|08|09)[0-9]{8}$/.test(value);
+});
+
 $('#register-form').validate({
     rules:{
         name:{
@@ -5,11 +9,16 @@ $('#register-form').validate({
         },
         phone:{
             required:true,
+            phoneVN:true
 
         }
         ,
         phoneRela:{
-            required: true
+            required: true,
+            phoneVN:true
+        },
+        email:{
+            email:true
         },
         password:{
             required:true
@@ -26,9 +35,13 @@ $('#register-form').validate({
         name: "Họ và tên không được bỏ trống",
         phone:{
             required:"Số điện thoại không được bỏ trống",
-
+            phoneVN:"Vui lòng nhập số điện thoại hợp lệ"
         },
-        phoneRela:"Mã giới thiệu là Số điện thoại đăng ký của người giới thiệu cho bạn website này, vui lòng liên hệ với họ để được tư vấn. Nếu bạn là khách hàng vãng lai chưa có mã giới thiệu vui lòng nhập mã 0886169393 của công ty để chúng tôi phân bổ hợp lý",
+        phoneRela:{
+           required: "Mã giới thiệu là Số điện thoại đăng ký của người giới thiệu cho bạn website này, vui lòng liên hệ với họ để được tư vấn. Nếu bạn là khách hàng vãng lai chưa có mã giới thiệu vui lòng nhập mã 0886169393 của công ty để chúng tôi phân bổ hợp lý",
+           phoneVN:"Vui lòng nhập số điện thoại hợp lệ" 
+        },
+        email:"Vui lòng nhập đúng định dạng email",
         password:"Mật khẩu không được bỏ trống",
         confirmPass:{
             required: "Mật khẩu không được bỏ trống",
