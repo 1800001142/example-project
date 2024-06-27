@@ -18133,7 +18133,7 @@ C13.7,4.5,4.5,13.7,4.5,25S13.7,45.5,25,45.5S45.5,36.3,45.5,25S36.3,4.5,25,4.5z"/
     var hidePop = function () {
         loginBox.classList.contains("active") && closeLogin.click(), cartContent.classList.contains("show") && closeCart.click()
     };
-    Array.from(document.querySelectorAll(".search-but, .language, .nav-click, .logo, .login-but-supplier"), (function (e) {
+    Array.from(document.querySelectorAll(" .language, .nav-click, .logo, .login-but-supplier"), (function (e) {
         addMultipleEvents(["mouseenter", "click"], e, (function (e) {
             hidePop()
         }))
